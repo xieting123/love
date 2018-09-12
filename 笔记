@@ -1,0 +1,20 @@
+表白神器跳动的爱心和闪电字幕使用属性:
+http://www.css88.com/book/css/
+1.定位 position  - 元素居中效果
+2.背景类 background
+    + background-size
+    + background-clip
+    + -webkit-fill-color
+3.transform
+    + rotate(0deg) 旋转角度
+    + border-radius 圆角
+    + box-shadow 盒子阴影
+4.animation 动画
+5.选择器
+    + :before
+    + :after
+
+
+
+
+

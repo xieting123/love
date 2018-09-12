@@ -1,0 +1,22 @@
+body{background:#000 url("../images/love.jpg") no-repeat top center}
+.heart-body{position: absolute;left:50%;top:50%;width:200px;height:200px;margin:-100px 0 0 -100px;transform: rotate(45deg);animation:love 1s ease infinite }
+.heart-shape{width: 200px;height:200px;background: red;box-shadow: 0 0 50px rgb(255,0,0)}
+/*.heart-body:before{position:absolute;top:0;left:-100px;content: "";width:200px;height:200px;background: red;border-radius: 50%}
+.heart-body:after{position:absolute;top:-100px;left:0;content: "";width:200px;height:200px;background: red;border-radius: 50%;}*/
+.heart-body:before, .heart-body:after{position:absolute;content: "";width:200px;height:200px;background: red;border-radius: 50%;box-shadow: 0 0 50px rgb(255,0,0);}
+.heart-body:before{top:0;left:-100px;}
+.heart-body:after{top:-100px;left:0;}
+
+.heart-txt{position: absolute;bottom:100px;width:100%;text-align: center}
+.heart-shine{font-size: 100px;font-weight: bold;color:#fff;background: url("../images/moon.jpg");-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: moon .1s ease infinite}
+
+
+
+@keyframes love {
+    0%,100%{transform: scale(.9,.9) rotate(45deg)} /* 0% = from 开始帧*/
+    50%{transform: scale(1.2,1.2) rotate(45deg)} /* 100% = to 结束帧*/
+}
+@keyframes moon {
+    0%,100%{background-position: 0 0}
+    50%{background-position: 100% 100%}
+}
